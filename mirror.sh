@@ -5,7 +5,7 @@ for i in $args; do
     reverse="";
     if [ $number -eq 0 ]; then
         echo 0
-        exit 0
+        continue
     fi
     while [ $number -ge 1 ]; do
         reste=$(expr $number % 10)
