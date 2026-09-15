@@ -5,7 +5,7 @@ if [ "$#" -lt 2 ]; then
     bash ./readme.sh
     exit 1
 fi
-# J'ai lu - Maeva
+
 
 case $1 in
     len|l) op="l" ;;
