@@ -24,7 +24,6 @@ args=$@
 
 for i in $args; do
     isnum="$(expr 0 + "$i" 2>/dev/null)"
-    echo $isnum
     if [ -z $isnum ]; then
         echo "$i n'est pas un nombre entier"
         bash ./readme.sh
