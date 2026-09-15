@@ -1,5 +1,5 @@
 #!/bin/bash
-# Implémentation de len.sh à faire 
+# Implémentation de len.sh à faire par Maéva
 
 for mot in "$@"; do
     len=0
