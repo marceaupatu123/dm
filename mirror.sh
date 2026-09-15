@@ -2,11 +2,12 @@
 args=$@
 for i in $args; do
     number=$i;
-    reverse=0;
-    while [ $number -ge 10 ]; do
-        reverse=$((reverse*10 + $((number % 10))))
-        number=$((number / 10))
+    reverse="";
+    while [ $number -ge 1 ]; do
+        reste=$(expr $number % 10)
+        reverse=$reverse$reste
+        number=$(expr $number / 10)
     done
-    echo $((reverse * 10 + number))
+    echo $reverse
 done
 chmod u+x mirror.sh
