@@ -3,6 +3,10 @@ args=$@
 for i in $args; do
     number=$i;
     reverse="";
+    if [ $number -eq 0 ]; then
+        echo 0
+        continue
+    fi
     while [ $number -ge 1 ]; do
         reste=$(expr $number % 10)
         reverse=$reverse$reste
